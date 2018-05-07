@@ -16,6 +16,7 @@
 		3F9627D020A0B1C0005BE64B /* SomeSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627CF20A0B1C0005BE64B /* SomeSwiftClass.swift */; };
 		3F9627D320A0B453005BE64B /* ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627D220A0B453005BE64B /* ObjCTests.m */; };
 		3F9627DA20A0B7BB005BE64B /* ObjCClassUsingSwiftClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627D920A0B7BB005BE64B /* ObjCClassUsingSwiftClass.m */; };
+		3F9627E520A0BF53005BE64B /* ObjCOnlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627E420A0BF53005BE64B /* ObjCOnlyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,13 @@
 			remoteInfo = MixedLanguageTesting;
 		};
 		3F9627BE20A0B1A7005BE64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F96279820A0B1A6005BE64B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F96279F20A0B1A6005BE64B;
+			remoteInfo = MixedLanguageTesting;
+		};
+		3F9627E720A0BF54005BE64B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3F96279820A0B1A6005BE64B /* Project object */;
 			proxyType = 1;
@@ -55,6 +63,9 @@
 		3F9627D420A0B558005BE64B /* MixedLanguageTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixedLanguageTesting-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F9627D820A0B7BB005BE64B /* ObjCClassUsingSwiftClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCClassUsingSwiftClass.h; sourceTree = "<group>"; };
 		3F9627D920A0B7BB005BE64B /* ObjCClassUsingSwiftClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCClassUsingSwiftClass.m; sourceTree = "<group>"; };
+		3F9627E220A0BF53005BE64B /* ObjCOnlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCOnlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9627E420A0BF53005BE64B /* ObjCOnlyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCOnlyTests.m; sourceTree = "<group>"; };
+		3F9627E620A0BF54005BE64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +90,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F9627DF20A0BF53005BE64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +106,7 @@
 				3F9627A220A0B1A6005BE64B /* MixedLanguageTesting */,
 				3F9627B520A0B1A7005BE64B /* MixedLanguageTestingTests */,
 				3F9627C020A0B1A7005BE64B /* MixedLanguageTestingUITests */,
+				3F9627E320A0BF53005BE64B /* ObjCOnlyTests */,
 				3F9627A120A0B1A6005BE64B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +117,7 @@
 				3F9627A020A0B1A6005BE64B /* MixedLanguageTesting.app */,
 				3F9627B220A0B1A7005BE64B /* MixedLanguageTestingTests.xctest */,
 				3F9627BD20A0B1A7005BE64B /* MixedLanguageTestingUITests.xctest */,
+				3F9627E220A0BF53005BE64B /* ObjCOnlyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +157,15 @@
 				3F9627C320A0B1A7005BE64B /* Info.plist */,
 			);
 			path = MixedLanguageTestingUITests;
+			sourceTree = "<group>";
+		};
+		3F9627E320A0BF53005BE64B /* ObjCOnlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F9627E420A0BF53005BE64B /* ObjCOnlyTests.m */,
+				3F9627E620A0BF54005BE64B /* Info.plist */,
+			);
+			path = ObjCOnlyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +224,24 @@
 			productReference = 3F9627BD20A0B1A7005BE64B /* MixedLanguageTestingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3F9627E120A0BF53005BE64B /* ObjCOnlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F9627E920A0BF54005BE64B /* Build configuration list for PBXNativeTarget "ObjCOnlyTests" */;
+			buildPhases = (
+				3F9627DE20A0BF53005BE64B /* Sources */,
+				3F9627DF20A0BF53005BE64B /* Frameworks */,
+				3F9627E020A0BF53005BE64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F9627E820A0BF54005BE64B /* PBXTargetDependency */,
+			);
+			name = ObjCOnlyTests;
+			productName = ObjCOnlyTests;
+			productReference = 3F9627E220A0BF53005BE64B /* ObjCOnlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -218,6 +265,10 @@
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 3F96279F20A0B1A6005BE64B;
 					};
+					3F9627E120A0BF53005BE64B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 3F96279F20A0B1A6005BE64B;
+					};
 				};
 			};
 			buildConfigurationList = 3F96279B20A0B1A6005BE64B /* Build configuration list for PBXProject "MixedLanguageTesting" */;
@@ -236,6 +287,7 @@
 				3F96279F20A0B1A6005BE64B /* MixedLanguageTesting */,
 				3F9627B120A0B1A7005BE64B /* MixedLanguageTestingTests */,
 				3F9627BC20A0B1A7005BE64B /* MixedLanguageTestingUITests */,
+				3F9627E120A0BF53005BE64B /* ObjCOnlyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +310,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3F9627BB20A0B1A7005BE64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9627E020A0BF53005BE64B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,6 +354,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F9627DE20A0BF53005BE64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9627E520A0BF53005BE64B /* ObjCOnlyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -307,6 +374,11 @@
 			isa = PBXTargetDependency;
 			target = 3F96279F20A0B1A6005BE64B /* MixedLanguageTesting */;
 			targetProxy = 3F9627BE20A0B1A7005BE64B /* PBXContainerItemProxy */;
+		};
+		3F9627E820A0BF54005BE64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F96279F20A0B1A6005BE64B /* MixedLanguageTesting */;
+			targetProxy = 3F9627E720A0BF54005BE64B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -326,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_TARGET_DERIVED_SOURCES_DIR = "$(DERIVED_SOURCES_DIR)/../../MixedLanguageTesting.build/DerivedSources";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -385,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_TARGET_DERIVED_SOURCES_DIR = "$(DERIVED_SOURCES_DIR)/../../MixedLanguageTesting.build/DerivedSources";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -477,11 +551,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(DERIVED_SOURCES_DIR)/../../MixedLanguageTesting.build/DerivedSources",
-					HEY_LOOK_ITS_MY_HEADER_SEARCH_PATH,
-					"$(BUILD_DIR)/MixedLanguageTesting.build/$(CONFIGURATION)/MixedLanguageTesting.build/DerivedSources",
-				);
+				HEADER_SEARCH_PATHS = "$(APP_TARGET_DERIVED_SOURCES_DIR)";
 				INFOPLIST_FILE = MixedLanguageTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,11 +574,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(DERIVED_SOURCES_DIR)/../../MixedLanguageTesting.build/DerivedSources",
-					HEY_LOOK_ITS_MY_HEADER_SEARCH_PATH,
-					"$(BUILD_DIR)/MixedLanguageTesting.build/$(CONFIGURATION)/MixedLanguageTesting.build/DerivedSources",
-				);
+				HEADER_SEARCH_PATHS = "$(APP_TARGET_DERIVED_SOURCES_DIR)";
 				INFOPLIST_FILE = MixedLanguageTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -559,6 +625,46 @@
 			};
 			name = Release;
 		};
+		3F9627EA20A0BF54005BE64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6ZA93RH52B;
+				HEADER_SEARCH_PATHS = "$(APP_TARGET_DERIVED_SOURCES_DIR)";
+				INFOPLIST_FILE = ObjCOnlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremywsherman.ObjCOnlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixedLanguageTesting.app/Contents/MacOS/MixedLanguageTesting";
+			};
+			name = Debug;
+		};
+		3F9627EB20A0BF54005BE64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6ZA93RH52B;
+				HEADER_SEARCH_PATHS = "$(APP_TARGET_DERIVED_SOURCES_DIR)";
+				INFOPLIST_FILE = ObjCOnlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremywsherman.ObjCOnlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixedLanguageTesting.app/Contents/MacOS/MixedLanguageTesting";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,6 +700,15 @@
 			buildConfigurations = (
 				3F9627CD20A0B1A7005BE64B /* Debug */,
 				3F9627CE20A0B1A7005BE64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F9627E920A0BF54005BE64B /* Build configuration list for PBXNativeTarget "ObjCOnlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9627EA20A0BF54005BE64B /* Debug */,
+				3F9627EB20A0BF54005BE64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
