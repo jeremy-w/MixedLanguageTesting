@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "MixedLanguageTesting-Swift.h"
 
 @interface ObjCTests : XCTestCase
 
