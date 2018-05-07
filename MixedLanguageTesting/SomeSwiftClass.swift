@@ -8,7 +8,7 @@
 
 import Cocoa
 
-@objc
+@objc open
 class SomeSwiftClass: NSObject {
     @objc
     let someProperty: String
