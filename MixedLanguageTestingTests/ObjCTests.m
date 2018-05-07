@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "MixedLanguageTesting-Swift.h"
+#import "ObjCClassUsingSwiftClass.h"
 
 @interface ObjCTests : XCTestCase
 
@@ -15,7 +15,8 @@
 
 @implementation ObjCTests
 - (void)testSwiftFromObjC {
-    SomeSwiftClass *subject = [[SomeSwiftClass alloc] initWithSomeProperty:@"test"];
-    XCTAssertEqualObjects(subject.someProperty, @"test");
+    ObjCClassUsingSwiftClass *subject = [ObjCClassUsingSwiftClass new];
+    subject.swiftishProperty = [[SomeSwiftClass alloc] initWithSomeProperty:@"test"];
+    XCTAssertNotNil(subject.swiftishProperty);
 }
 @end

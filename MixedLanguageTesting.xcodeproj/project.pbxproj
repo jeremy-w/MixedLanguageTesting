@@ -15,7 +15,7 @@
 		3F9627C220A0B1A7005BE64B /* MixedLanguageTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627C120A0B1A7005BE64B /* MixedLanguageTestingUITests.swift */; };
 		3F9627D020A0B1C0005BE64B /* SomeSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627CF20A0B1C0005BE64B /* SomeSwiftClass.swift */; };
 		3F9627D320A0B453005BE64B /* ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627D220A0B453005BE64B /* ObjCTests.m */; };
-		3F9627D720A0B558005BE64B /* ObjCSubclassOfSwiftClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627D620A0B558005BE64B /* ObjCSubclassOfSwiftClass.m */; };
+		3F9627DA20A0B7BB005BE64B /* ObjCClassUsingSwiftClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627D920A0B7BB005BE64B /* ObjCClassUsingSwiftClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,8 @@
 		3F9627D120A0B453005BE64B /* MixedLanguageTestingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixedLanguageTestingTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F9627D220A0B453005BE64B /* ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCTests.m; sourceTree = "<group>"; };
 		3F9627D420A0B558005BE64B /* MixedLanguageTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixedLanguageTesting-Bridging-Header.h"; sourceTree = "<group>"; };
-		3F9627D520A0B558005BE64B /* ObjCSubclassOfSwiftClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCSubclassOfSwiftClass.h; sourceTree = "<group>"; };
-		3F9627D620A0B558005BE64B /* ObjCSubclassOfSwiftClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCSubclassOfSwiftClass.m; sourceTree = "<group>"; };
+		3F9627D820A0B7BB005BE64B /* ObjCClassUsingSwiftClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCClassUsingSwiftClass.h; sourceTree = "<group>"; };
+		3F9627D920A0B7BB005BE64B /* ObjCClassUsingSwiftClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCClassUsingSwiftClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +112,8 @@
 				3F9627AC20A0B1A6005BE64B /* Info.plist */,
 				3F9627AD20A0B1A6005BE64B /* MixedLanguageTesting.entitlements */,
 				3F9627CF20A0B1C0005BE64B /* SomeSwiftClass.swift */,
-				3F9627D520A0B558005BE64B /* ObjCSubclassOfSwiftClass.h */,
-				3F9627D620A0B558005BE64B /* ObjCSubclassOfSwiftClass.m */,
+				3F9627D820A0B7BB005BE64B /* ObjCClassUsingSwiftClass.h */,
+				3F9627D920A0B7BB005BE64B /* ObjCClassUsingSwiftClass.m */,
 				3F9627D420A0B558005BE64B /* MixedLanguageTesting-Bridging-Header.h */,
 			);
 			path = MixedLanguageTesting;
@@ -273,8 +273,8 @@
 			files = (
 				3F9627A620A0B1A6005BE64B /* ViewController.swift in Sources */,
 				3F9627D020A0B1C0005BE64B /* SomeSwiftClass.swift in Sources */,
+				3F9627DA20A0B7BB005BE64B /* ObjCClassUsingSwiftClass.m in Sources */,
 				3F9627A420A0B1A6005BE64B /* AppDelegate.swift in Sources */,
-				3F9627D720A0B558005BE64B /* ObjCSubclassOfSwiftClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
