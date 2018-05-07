@@ -14,6 +14,7 @@
 		3F9627B720A0B1A7005BE64B /* MixedLanguageTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627B620A0B1A7005BE64B /* MixedLanguageTestingTests.swift */; };
 		3F9627C220A0B1A7005BE64B /* MixedLanguageTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627C120A0B1A7005BE64B /* MixedLanguageTestingUITests.swift */; };
 		3F9627D020A0B1C0005BE64B /* SomeSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627CF20A0B1C0005BE64B /* SomeSwiftClass.swift */; };
+		3F9627D320A0B453005BE64B /* ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9627D220A0B453005BE64B /* ObjCTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		3F9627C120A0B1A7005BE64B /* MixedLanguageTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedLanguageTestingUITests.swift; sourceTree = "<group>"; };
 		3F9627C320A0B1A7005BE64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F9627CF20A0B1C0005BE64B /* SomeSwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeSwiftClass.swift; sourceTree = "<group>"; };
+		3F9627D120A0B453005BE64B /* MixedLanguageTestingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixedLanguageTestingTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F9627D220A0B453005BE64B /* ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				3F9627B620A0B1A7005BE64B /* MixedLanguageTestingTests.swift */,
+				3F9627D220A0B453005BE64B /* ObjCTests.m */,
 				3F9627B820A0B1A7005BE64B /* Info.plist */,
+				3F9627D120A0B453005BE64B /* MixedLanguageTestingTests-Bridging-Header.h */,
 			);
 			path = MixedLanguageTestingTests;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 					};
 					3F9627B120A0B1A7005BE64B = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 						TestTargetID = 3F96279F20A0B1A6005BE64B;
 					};
 					3F9627BC20A0B1A7005BE64B = {
@@ -268,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9627B720A0B1A7005BE64B /* MixedLanguageTestingTests.swift in Sources */,
+				3F9627D320A0B453005BE64B /* ObjCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +461,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MixedLanguageTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,6 +471,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeremywsherman.MixedLanguageTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedLanguageTestingTests/MixedLanguageTestingTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixedLanguageTesting.app/Contents/MacOS/MixedLanguageTesting";
 			};
@@ -473,6 +483,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MixedLanguageTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,6 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeremywsherman.MixedLanguageTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedLanguageTestingTests/MixedLanguageTestingTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixedLanguageTesting.app/Contents/MacOS/MixedLanguageTesting";
 			};
