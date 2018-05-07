@@ -477,6 +477,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(DERIVED_SOURCES_DIR)/../../MixedLanguageTesting.build/DerivedSources",
+					HEY_LOOK_ITS_MY_HEADER_SEARCH_PATH,
+					"$(BUILD_DIR)/MixedLanguageTesting.build/$(CONFIGURATION)/MixedLanguageTesting.build/DerivedSources",
+				);
 				INFOPLIST_FILE = MixedLanguageTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,6 +504,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(DERIVED_SOURCES_DIR)/../../MixedLanguageTesting.build/DerivedSources",
+					HEY_LOOK_ITS_MY_HEADER_SEARCH_PATH,
+					"$(BUILD_DIR)/MixedLanguageTesting.build/$(CONFIGURATION)/MixedLanguageTesting.build/DerivedSources",
+				);
 				INFOPLIST_FILE = MixedLanguageTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
