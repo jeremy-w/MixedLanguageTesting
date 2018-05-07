@@ -398,7 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_TARGET_DERIVED_SOURCES_DIR = "$(DERIVED_SOURCES_DIR)/../../MixedLanguageTesting.build/DerivedSources";
+				APP_TARGET_DERIVED_SOURCES_DIR = "$(CONFIGURATION_TEMP_DIR)/MixedLanguageTesting.build/DerivedSources";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -458,7 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_TARGET_DERIVED_SOURCES_DIR = "$(DERIVED_SOURCES_DIR)/../../MixedLanguageTesting.build/DerivedSources";
+				APP_TARGET_DERIVED_SOURCES_DIR = "$(CONFIGURATION_TEMP_DIR)/MixedLanguageTesting.build/DerivedSources";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -642,6 +642,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeremywsherman.ObjCOnlyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixedLanguageTesting.app/Contents/MacOS/MixedLanguageTesting";
+				USER_HEADER_SEARCH_PATHS = "\"$(CONFIGURATION_TEMP_DIR)/MixedLanguageTesting.build/DerivedSources <- HAVE A LOOK OVER THERE WOULD YOU?\"";
 			};
 			name = Debug;
 		};
@@ -662,6 +663,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeremywsherman.ObjCOnlyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixedLanguageTesting.app/Contents/MacOS/MixedLanguageTesting";
+				USER_HEADER_SEARCH_PATHS = "\"$(CONFIGURATION_TEMP_DIR)/MixedLanguageTesting.build/DerivedSources <- HAVE A LOOK OVER THERE WOULD YOU?\"";
 			};
 			name = Release;
 		};
